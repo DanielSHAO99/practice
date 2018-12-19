@@ -10,5 +10,7 @@ windows上的使用需要特别注意编码问题，这地方仍然有坑
 
 pickle模块可以python方式存储结果到文件，并读取使用
 
+topdown为true表示广度优先遍历，false表示深度优先
+
 
 
