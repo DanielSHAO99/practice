@@ -34,3 +34,5 @@ git reflog可查看命令历史
 不使用fast forward模式的好处是会保存合并的历史，参数git merge --no-ff -m "something instruction" branchname
 在分支上的工作如果没有commit，就切换到其他分支，会丢失结果，也会造成异常，事实上无法切换
 强制删除git branch -D branchname,比如无用的临时分支
+
+pull与合作关系
