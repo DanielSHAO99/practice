@@ -30,4 +30,6 @@ master的操作,学习合并冲突
 当在分支上做了工作，还没有提交时（可已经add)，可使用gitstash存储起来，
 git stash list可查看当前存储的内容，
 后续使用git stash pop恢复工作区内容，pop在恢复后会删除内容
-
+git reflog可查看命令历史
+不使用fast forward模式的好处是会保存合并的历史，参数git merge --no-ff -m "something instruction" branchname
+在分支上的工作如果没有commit，就切换到其他分支，会丢失结果，也会造成异常，事实上无法切换
