@@ -19,6 +19,9 @@ condition
 例中生成斐波那契数列数列，并可多次访问
 定义__iter__与next方法，可使用列表生成式操作
 为避免对象只能使用一次，在停止时重设初始变量，从而一个对象可完整遍历无数次
+5.git的diff命令会默认显示变动位置
+上下文三行的内容
+
 4,git的branch操作
 master的操作,学习合并冲突
 如果合并分支和待合并分支都有添加的操作，那么merge就会失败，就需要手动操作
@@ -34,3 +37,14 @@ git reflog可查看命令历史
 不使用fast forward模式的好处是会保存合并的历史，参数git merge --no-ff -m "something instruction" branchname
 在分支上的工作如果没有commit，就切换到其他分支，会丢失结果，也会造成异常，事实上无法切换
 强制删除git branch -D branchname,比如无用的临时分支
+test diff  
+5,eval的作用  
+eval(字符串语句)将字符串作为一个语句去执行
+format这种方式语句有引号
+比如
+"somthing {}".format()
+就需要将整个语句包装为字符串，在打印的时候也是可用作输出的格式
+比如a="world"，print a的时候，显示为world，eval(a)显示的也会是无引号的方式，会去除一层引号
+
+print eval("flag[0]"),会取出flag 0位置的值
+相当于取出外围的一层引号
