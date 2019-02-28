@@ -61,6 +61,8 @@ virtualenv --no-site-packages venname 创建一个虚拟环境，不复制原来
 virtualenv -p /usr/bin/python2.7 venname解释器的具体数值可以在~/.bashrc中找，一个是python3,7一个是python2.7
 souce venname/bin/active激活虚拟环境
 deactivate停止
-
-
+django与mysql的数据通信
+makemigrations
+migrate
+需要在setting下配置数据库的host，数据库名，密码等
 
