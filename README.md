@@ -54,3 +54,13 @@ print eval("flag[0]"),会取出flag 0位置的值
 -m以模块方式运行，会把执行目录放到sys.path中，后续跟着的执行文件需要是一个模块，即需要__init__.py文件
 直接运行的方式，会将脚本所在目录放入sys.path中，如果在模块2中相对路径导入模块1中的脚本，则需以-m方式运行
 
+
+7,开源项目虚拟环境使用
+virtualenv --no-site-packages venname 创建一个虚拟环境，不复制原来的包
+指定python解释器：
+virtualenv -p /usr/bin/python2.7 venname解释器的具体数值可以在~/.bashrc中找，一个是python3,7一个是python2.7
+souce venname/bin/active激活虚拟环境
+deactivate停止
+
+
+
